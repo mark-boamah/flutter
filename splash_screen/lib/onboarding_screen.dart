@@ -3,6 +3,8 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:splash_screen/intro_screens/intro_page_1.dart';
 import 'package:splash_screen/intro_screens/intro_page_2.dart';
 import 'package:splash_screen/intro_screens/intro_page_3.dart';
+import 'package:splash_screen/new_homepage.dart';
+import 'package:splash_screen/pages/description_page.dart';
 
 import 'home_page.dart';
 
@@ -61,7 +63,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         onTap: () {
                           Navigator.push(context, MaterialPageRoute(
                             builder: (context) {
-                              return HomePage();
+                              //return HomePage();
+                              return NewHomePage();
+                              //return DescriptionPage();
                             },
                           ));
                         },
